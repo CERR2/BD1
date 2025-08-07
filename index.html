@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Cumpleaños</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decoraciones flotantes -->
+  <div class="decoration circle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+  <div class="decoration triangle" style="top: 15%; right: 15%; animation-delay: 1s;"></div>
+  <div class="decoration circle" style="bottom: 20%; left: 20%; width: 50px; height: 50px; animation-delay: 2s;"></div>
+  <div class="decoration triangle" style="bottom: 15%; right: 10%; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 50px solid rgba(142, 110, 218, 0.3); animation-delay: 3s;"></div>
+
+  <!-- Vista Principal -->
+  <div id="main-view" class="view active card">
+    <h1>¡Feliz Cumpleaños!</h1>
+    <div class="grid-container">
+      <button id="btn-fotico">
+        <i class="fas fa-camera"></i> Fotico
+      </button>
+      <button id="btn-dedicatoria">
+        <i class="fas fa-heart"></i> Dedicatoria
+      </button>
+      <button id="btn-cancion">
+        <i class="fas fa-music"></i> Canción
+      </button>
+      <button id="btn-todo">
+        <i class="fas fa-gift"></i> Lo quiero todo
+      </button>
+    </div>
+  </div>
+
+  <!-- Fotico -->
+  <div id="view-fotico" class="view card">
+    <h2><i class="fas fa-camera"></i> Un Recuerdo Especial</h2>
+    <img src="Fotico.jpg" alt="Foto de cumpleaños" />
+    <button class="btn-back">
+      <i class="fas fa-arrow-left"></i> Volver
+    </button>
+  </div>
+
+  <!-- Dedicatoria -->
+  <div id="view-dedicatoria" class="view card">
+    <h2><i class="fas fa-heart"></i> Dedicatoria</h2>
+    <p>¡Feliz cumple Kiarita! <span class="emoji">🎉</span><br>Espero que disfrutes mucho tus 26 (ya son unos cuantos jj)<br>Nada, te deseo muchas cosas buenas y eso...<br><span class="emoji">😘😘😘</span><br>Pd: Fue mas facil escribir el codigo que encontrar una foto nuestra <span class="emoji">😂😂😂</span></p>
+    <button class="btn-back">
+      <i class="fas fa-arrow-left"></i> Volver
+    </button>
+  </div>
+  
+  <!-- Canción -->
+  <div id="view-cancion" class="view card">
+    <h2><i class="fas fa-music"></i> Tu Canción</h2>
+    <div class="music-player">
+      <div class="album-cover">
+        <i class="fas fa-music"></i>
+      </div>
+    </div>
+    <audio id="audio" src="celebration.mp3"></audio>
+    <button id="play-btn">
+      <i class="fas fa-play"></i> Reproducir canción
+    </button>
+    <button class="btn-back" style="margin-top: 1rem;">
+      <i class="fas fa-arrow-left"></i> Volver
+    </button>
+  </div>
+
+  <!-- Todo junto -->
+  <div id="view-todo" class="view card">
+    <h2><i class="fas fa-gift"></i> ¡Todo Para Ti!</h2>
+    <img src="Fotico.jpg" alt="Foto de cumpleaños" />
+    <p>¡Feliz cumple Kiarita! <span class="emoji">🎉</span><br>Espero que disfrutes mucho tus 26 (ya son unos cuantos jj)<br>Nada, te deseo muchas cosas buenas y eso...<br><span class="emoji">😘😘😘</span><br>Pd: Fue mas facil escribir el codigo que encontrar una foto nuestra <span class="emoji">😂😂😂</span></p>
+    <audio id="audio2" src="celebration.mp3"></audio>
+    <button id="play-todo">
+      <i class="fas fa-play"></i> Reproducir canción
+    </button>
+    <button class="btn-back" style="margin-top: 1rem;">
+      <i class="fas fa-arrow-left"></i> Volver
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
